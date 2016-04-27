@@ -1,3 +1,29 @@
 ---
 classes:
  - ntp
+ - site::vcsrepos
+ - site::symlinker
+
+symlinks:
+ mr:
+  path: '/usr/bin/mr'
+  ensure: 'link'
+  target: '/opt/myrepos/mr'
+ vcsh:
+  path: '/usr/bin/vcsh'
+  ensure: 'link'
+  target: '/opt/vcsh/vcsh'
+
+vcsrepos:
+ myrepos:
+  path: '/opt/myrepos'
+  ensure: latest
+  provider: git
+  source: 'https://github.com/joeyh/myrepos.git' 
+  revision: 'master' 
+ vcsh:
+  path: '/opt/vcsh'
+  ensure: latest
+  provider: git
+  source: 'https://github.com/RichiH/vcsh.git'
+  revision: 'master' 
