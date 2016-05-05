@@ -1,9 +1,11 @@
 ---
 classes:
- - virtualbox
  - docker
-
-virtualbox::version: '5.0'
+ - vagrant
+ - virtualbox
 
 docker::docker_users:
  - mt
+
+virtualbox::version: '5.0'
+
