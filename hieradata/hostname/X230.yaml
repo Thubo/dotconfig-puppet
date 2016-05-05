@@ -1,5 +1,9 @@
 ---
 classes:
  - virtualbox
+ - docker
 
 virtualbox::version: '5.0'
+
+docker::docker_users:
+ - mt
