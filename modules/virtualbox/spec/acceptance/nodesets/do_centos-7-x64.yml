@@ -1,0 +1,12 @@
+HOSTS:
+  do_centos-7-x64:
+    roles:
+      - master
+    platform: el-7-x86_64
+    hypervisor: digitalocean
+    size: 512mb
+    image: 10322623
+    region: nyc3
+CONFIG:
+  log_level: verbose
+  type: foss
