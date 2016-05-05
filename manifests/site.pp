@@ -13,3 +13,10 @@ class site::symlinker {
   create_resources (file, $symlinks)
 
 }
+
+class site::vagrant_plugins {
+
+  $vagrant_plugins = hiera_hash('vagrant_plugins')
+  create_resources (vagrant::plugin, $vagrant_plugins)
+
+}

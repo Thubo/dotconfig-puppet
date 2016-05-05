@@ -2,10 +2,28 @@
 classes:
  - docker
  - vagrant
+ - site::vagrant_plugins
  - virtualbox
 
 docker::docker_users:
  - mt
+
+vagrant_plugins:
+ landrush:
+  user: 'mt'
+  ensure: 'latest'
+ vagrant-hostmanager:
+  user: 'mt'
+  ensure: 'latest'
+ vagrant-proxyconf:
+  user: 'mt'
+  ensure: 'latest'
+ vagrant-triggers:
+  user: 'mt'
+  ensure: 'latest'
+ vagrant-vbox-snapshot:
+  user: 'mt'
+  ensure: 'latest'
 
 virtualbox::version: '5.0'
 
