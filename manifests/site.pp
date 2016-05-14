@@ -20,3 +20,10 @@ class site::vagrant_plugins {
   create_resources (vagrant::plugin, $vagrant_plugins)
 
 }
+
+class site::packages {
+
+  $enhancers = hiera('enhancers')
+  package { $enhancers: ensure => 'installed' }
+
+}

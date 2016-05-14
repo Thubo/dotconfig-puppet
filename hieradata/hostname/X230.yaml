@@ -2,28 +2,32 @@
 classes:
  - docker
  - vagrant
+ - site::packages
  - site::vagrant_plugins
  - virtualbox
 
 docker::docker_users:
  - mt
 
+enhancers:
+ - encfs
+ - git
+ - mlocate
+ - pdftk
+ - tree
+ - vim
+
 vagrant_plugins:
  landrush:
   user: 'mt'
-  ensure: 'latest'
  vagrant-hostmanager:
   user: 'mt'
-  ensure: 'latest'
  vagrant-proxyconf:
   user: 'mt'
-  ensure: 'latest'
  vagrant-triggers:
   user: 'mt'
-  ensure: 'latest'
  vagrant-vbox-snapshot:
   user: 'mt'
-  ensure: 'latest'
 
 virtualbox::version: '5.0'
 
