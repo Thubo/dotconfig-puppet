@@ -1,10 +1,19 @@
 ---
 classes:
  - ntp
- - site::vcsrepos
- - site::symlinker
+
+site::packages:
+ - git
+ - mlocate
+ - tmux
+ - tree
+ - vim
 
 symlinks:
+ dynmotd:
+  path: '/usr/bin/dynmotd'
+  ensure: 'link'
+  target: '/opt/dynmotd/dynmotd'
  mr:
   path: '/usr/bin/mr'
   ensure: 'link'
@@ -15,15 +24,21 @@ symlinks:
   target: '/opt/vcsh/vcsh'
 
 vcsrepos:
+ dynmotd:
+  path: '/opt/dynmotd'
+  ensure: latest
+  provider: git
+  source: 'https://github.com/Thubo/dynmotd.git'
+  revision: 'master'
  myrepos:
   path: '/opt/myrepos'
   ensure: latest
   provider: git
-  source: 'https://github.com/joeyh/myrepos.git' 
-  revision: 'master' 
+  source: 'https://github.com/joeyh/myrepos.git'
+  revision: 'master'
  vcsh:
   path: '/opt/vcsh'
   ensure: latest
   provider: git
   source: 'https://github.com/RichiH/vcsh.git'
-  revision: 'master' 
+  revision: 'master'

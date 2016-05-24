@@ -2,20 +2,16 @@
 classes:
  - docker
  - vagrant
- - site::packages
- - site::vagrant_plugins
  - virtualbox
+
+site::packages:
+ - encfs
+ - pdftk
+ - shutter
+ - terminator
 
 docker::docker_users:
  - mt
-
-enhancers:
- - encfs
- - git
- - mlocate
- - pdftk
- - tree
- - vim
 
 vagrant_plugins:
  landrush:
