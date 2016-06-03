@@ -1,10 +1,10 @@
 hiera_include('classes')
 
 
-$packages        = hiera('site::packages')
-$symlinks        = hiera('symlinks')
-$vagrant_plugins = hiera('vagrant_plugins')
-$vcsrepos        = hiera('vcsrepos')
+$packages        = hiera('site::packages',[])
+$symlinks        = hiera('symlinks',{})
+$vagrant_plugins = hiera('vagrant_plugins',{})
+$vcsrepos        = hiera('vcsrepos',{})
 
 package { $packages: ensure => 'installed' }
 

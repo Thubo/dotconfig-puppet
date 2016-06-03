@@ -3,11 +3,13 @@ classes:
  - ntp
 
 site::packages:
+ - curl
  - git
  - mlocate
  - tmux
  - tree
  - vim
+ - wget
 
 symlinks:
  dynmotd:

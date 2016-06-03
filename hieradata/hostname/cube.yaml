@@ -1,0 +1,10 @@
+---
+classes:
+ - docker
+
+site::packages:
+ - zfsutils-linux
+
+docker::docker_users:
+ - mt
+
