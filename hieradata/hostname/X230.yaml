@@ -5,10 +5,19 @@ classes:
  - virtualbox
 
 site::packages:
+ - arandr
  - encfs
+ - imagemagick
+ - numlockx
+ - parcellite
  - pdftk
+ - scrot
  - shutter
+ - synapse
  - terminator
+ - wakeonlan
+ - xautolock
+ - zsh
 
 docker::docker_users:
  - mt
@@ -27,3 +36,16 @@ vagrant_plugins:
 
 virtualbox::version: '5.0'
 
+symlinks:
+ ranger:
+  path: '/usr/bin/ranger'
+  ensure: 'link'
+  target: '/opt/ranger/ranger.py'
+
+vcsrepos:
+ ranger:
+  path: '/opt/ranger'
+  ensure: latest
+  provider: git
+  source: 'https://github.com/ranger/ranger.git'
+  revision: 'master'
