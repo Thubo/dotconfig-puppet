@@ -9,7 +9,7 @@
 
 # gem install librarian-puppet
 
-# librarian-puppet install
+# librarian-puppet install --verbose
 
 # puppet apply -t --pluginsync --hiera_config /etc/puppet/hiera.yaml --modulepath=/etc/puppet/modules/ /etc/puppet/manifests/site.pp
 ```

@@ -1,5 +1,6 @@
 .tmp/
-modules/
 Puppetfile.lock
-puppet.conf
 auth.conf
+modules/
+puppet.conf
+ssl
