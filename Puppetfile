@@ -14,6 +14,7 @@ mod 'danzilio-virtualbox'
 mod 'garethr-docker'
 mod 'puppetlabs-ntp'
 mod 'puppetlabs-vcsrepo'
+mod 'theforeman-puppet'
 mod 'torrancew-cron'
 mod 'unibet-vagrant'
 

@@ -1,6 +1,18 @@
 ---
 classes:
  - ntp
+ - puppet
+
+# Puppet: General
+puppet::show_diff: false
+# Puppet: Server
+puppet::server: false
+# Puppet: Agent
+puppet::agent: true
+puppet::runmode: 'cron'
+puppet::runinterval: '1800'
+puppet::splay: false
+puppet::cron_cmd: 'puppet apply --hiera_config /etc/puppet/hiera.yaml --modulepath=/etc/puppet/modules/ /etc/puppet/manifests/site.pp'
 
 site::packages:
  - curl
@@ -44,3 +56,4 @@ vcsrepos:
   provider: git
   source: 'https://github.com/RichiH/vcsh.git'
   revision: 'master'
+
