@@ -18,6 +18,10 @@ mod 'theforeman-puppet'
 mod 'torrancew-cron'
 mod 'unibet-vagrant'
 
+# Thubo/puppet-site
+mod 'thubo-site',
+  :git => 'git@github.com:Thubo/puppet-site.git'
+
 # A module from git
 # mod 'puppetlabs-ntp',
 #   :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git'

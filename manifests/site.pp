@@ -1,6 +1,5 @@
 hiera_include('classes')
 
-
 $packages        = hiera('site::packages',[])
 $symlinks        = hiera('symlinks',{})
 $vagrant_plugins = hiera('vagrant_plugins',{})

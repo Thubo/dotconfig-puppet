@@ -3,6 +3,7 @@ classes:
  - docker
  - vagrant
  - virtualbox
+ - site::wifi-resume-service
 
 site::packages:
  - arandr
