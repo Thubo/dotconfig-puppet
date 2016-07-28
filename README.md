@@ -7,9 +7,9 @@
 
 # git clone https://github.com/Thubo/dotconfig-puppet.git .
 
-# gem install librarian-puppet
+# gem install --no-rdoc --no-ri librarian-puppet
 
-# librarian-puppet install --no-rdoc --no-ri --verbose
+# librarian-puppet install --verbose
 
-# puppet apply -t --pluginsync --hiera_config /etc/puppet/hiera.yaml --modulepath=/etc/puppet/modules/ /etc/puppet/manifests/site.pp
+# puppet apply --pluginsync --hiera_config /etc/puppet/hiera.yaml --modulepath=/etc/puppet/modules/ /etc/puppet/manifests/site.pp
 ```
