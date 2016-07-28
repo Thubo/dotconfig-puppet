@@ -20,7 +20,7 @@ mod 'unibet-vagrant'
 
 # Thubo/puppet-site
 mod 'thubo-site',
-  :git => 'git@github.com:Thubo/puppet-site.git'
+  :git => 'git://github.com/Thubo/puppet-site.git'
 
 # A module from git
 # mod 'puppetlabs-ntp',
